@@ -1,0 +1,86 @@
+* ,*::after , *::before{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(31, 31, 31);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    min-width: 80%;
+    margin: 0 auto;
+
+}
+nav{
+    color: rgb(8, 8, 8);
+    background-color: beige;
+    width: 100%;
+    text-align: center;
+    padding: 0.4em 0.9em;
+}
+.board{
+    background-color: aqua;
+    min-height: 20rem;
+    min-width: 30rem;
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: column;
+    padding: 0.8em 0.9em;
+}
+.row{
+    border: 1px solid darkblue;
+    flex: 1;
+    display: flex;
+
+
+}
+.row>*{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(186, 174, 174);
+    flex-grow: 1;
+}
+.keyboard{
+    padding: 0.4em 0.8em;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+   flex-direction: column;
+   gap: 0.4rem;
+}
+.keyboard .row button{ 
+    cursor: pointer;
+    padding: 0.6em 0.7em;
+    background-color: rgb(246, 226, 160);
+}
+.keyboard .row button:active{
+    background-color: rgb(188, 191, 194);
+}
+.row button:disabled{
+        background-color: rgb(224, 224, 224);
+}
+.win , .end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+.end p , .win p{
+    color: white;
+}
+.end button , .win button{
+    padding: 0.3em 0.7em;
+    background-color: rgb(255, 234, 206);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+
